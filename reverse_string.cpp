@@ -50,9 +50,12 @@ public:
     void reverseString5(vector<char>& s, int currStart, int currEnd){
         /*
         This function uses recursion to swap corresponding values.
+        currStart and currEnd represents the two chars we want to swap.
         It takes O(N/2) = O(N) time complexity.
         Since the call stack can take up to O(N/2) memory space, it also takes O(N) space complexity.
         */
+
+        // base case: when start reaches end, it means we swapped all chars.
         if (currStart >= currEnd) {
             return;
         }
