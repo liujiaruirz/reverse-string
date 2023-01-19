@@ -10,13 +10,10 @@ int main () {
         getline(cin, s);
 
         std::vector<char> stoChar(s.begin(), s.end()); // convert string to char array
+        solution.reverseString1(stoChar); // reverse
+        string out(stoChar.begin(), stoChar.end()); // convert vector of char back to string
 
-        solution.reverseString1(stoChar);
-        cout << "The reversed string: ";
-        for (char c : stoChar) {
-            cout << c;
-        }
-        cout << endl;
+        cout << "The reversed string: "<< out << endl;
     }
     return 0;
 }
