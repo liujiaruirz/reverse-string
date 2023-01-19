@@ -24,4 +24,4 @@ To Run:
 ```
 
 ## Time/Space Complexity Analysis
-All functions take O(N/2) = O(N), i.e., linear time complexity. For space complexity, all functions also take O(N/2) = O(N) memory space, except for function 5 (using recursion), since the call stack takes O(N/2) space.
+All functions take O(N/2) = O(N), i.e., linear time complexity. For space complexity, all functions also take O(N/2) = O(N) memory space, except for function 5 (using recursion), which generates call stack of O(N/2) space.
