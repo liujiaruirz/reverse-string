@@ -1,5 +1,6 @@
 # Reverse String
 This repository provides five different methods in C++ to reverse a string.
+When receiving a string, the program firstly convert it to a vector of char, then call the functions in _reverse_string.cpp_ to reverse the vector __in place__. Finally, the program converts the reversed vector back to string and print out.
 
 ## Compile/Run Instructions
 ### Reverse a String Main Program
