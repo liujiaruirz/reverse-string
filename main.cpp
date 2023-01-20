@@ -4,8 +4,8 @@ using namespace std;
 
 int main () {
     Solution solution;
-    string s;
     while (1) {
+        string s;
         cout << "Input a string you want to reverse: ";
         getline(cin, s);
 

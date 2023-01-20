@@ -4,9 +4,20 @@ This repository provides five different methods in C++ to reverse a string.
 When receiving a string, the wrapper function _reverseString_ firstly converts the string to a vector of char, then call the reverse functions to reverse the vector __in-place__. Finally, the function converts the reversed vector back to string and return.
 
 ## Usage of Functions
-The function reverseString takes two args: string s and integer method. To use the function, give it the string and specify the method you want to use (from 1 to 5).
+The function reverseString takes two args: string s and integer method. To use the function, give it the string and specify the method you want to use (from 1 to 5). It returns the converted string.
 
-All reverse functions take a vector of chars and reverse the vector in-place (that is, the functions do not return anything but alter the input itself).
+Example:
+```cpp
+#include "reverse_string.cpp"
+using namespace std;
+
+int main() {
+    Solution solution;
+    string s = "HelloWorld";
+    string sRev = solution.reverseString(s, 1);
+    return 0
+}
+```
 
 ## Compile/Run Instructions
 ### Reverse a String Main Program
