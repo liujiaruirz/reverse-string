@@ -9,26 +9,12 @@ int main () {
         cout << "Input a string you want to reverse: ";
         getline(cin, s);
 
-        // convert string to char array
-        std::vector<char> stoChar1(s.begin(), s.end());
-        std::vector<char> stoChar2(s.begin(), s.end());
-        std::vector<char> stoChar3(s.begin(), s.end());
-        std::vector<char> stoChar4(s.begin(), s.end());
-        std::vector<char> stoChar5(s.begin(), s.end());
-
         // reverse by 5 methods
-        solution.reverseString1(stoChar1); 
-        solution.reverseString2(stoChar2); 
-        solution.reverseString3(stoChar3); 
-        solution.reverseString4(stoChar4); 
-        solution.reverseString5(stoChar5, 0, stoChar5.size() - 1); 
-
-        // convert vector of char back to string
-        string out1(stoChar1.begin(), stoChar1.end()); 
-        string out2(stoChar2.begin(), stoChar2.end()); 
-        string out3(stoChar3.begin(), stoChar3.end()); 
-        string out4(stoChar4.begin(), stoChar4.end()); 
-        string out5(stoChar5.begin(), stoChar5.end()); 
+        string out1 = solution.reverseString(s, 1);
+        string out2 = solution.reverseString(s, 2);
+        string out3 = solution.reverseString(s, 3);
+        string out4 = solution.reverseString(s, 4);
+        string out5 = solution.reverseString(s, 5);
 
         cout << "The reversed string by method 1: "<< out1 << endl;
         cout << "The reversed string by method 2: "<< out2 << endl;

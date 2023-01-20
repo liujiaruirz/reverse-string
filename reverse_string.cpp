@@ -4,6 +4,37 @@ using namespace std;
 
 class Solution {
 public:
+    // wrapper function
+    string reverseString(string s, int method) {
+        // convert string to vector
+        vector<char> v(s.begin(), s.end());
+        // reverse
+        switch (method) {
+            case 1:
+                reverseString1(v);
+                break;
+            case 2:
+                reverseString2(v);
+                break;
+            case 3:
+                reverseString3(v);
+                break;
+            case 4:
+                reverseString4(v);
+                break;
+            case 5:
+                reverseString5(v, 0, v.size() - 1);
+                break;
+            default:
+                cout << "Invalid method number." << endl;
+                return "INVALID";
+        }
+        // convert back
+        string out(v.begin(), v.end());
+        return out;
+    }
+
+    // reverse functions
     void reverseString1(vector<char>& s) {
         /*
         This function uses swap method in C++ standard library.

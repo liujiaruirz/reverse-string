@@ -1,21 +1,12 @@
 # Reverse String
 This repository provides five different methods in C++ to reverse a string.
-When receiving a string, the program firstly convert it to a vector of char, then call the functions in _reverse_string.cpp_ to reverse the vector __in-place__. Finally, the program converts the reversed vector back to string and print out.
+
+When receiving a string, the wrapper function _reverseString_ firstly converts the string to a vector of char, then call the reverse functions to reverse the vector __in-place__. Finally, the function converts the reversed vector back to string and return.
 
 ## Usage of Functions
-All functions take a vector of chars and reverse the vector in-place (that is, the functions do not return anything but alter the input itself). To convert a string s to a vector of chars, simply use 
-```
-vector<char> v(s.begin(), s.end());
-```
-Then call function. For example,
-```
-reverseString1(v);
-```
-To convert vector back to string, use
-```
-string out(v.begin(), v.end()); 
-```
-(Please note that the conversions above are already implemented in the main function.)
+The function reverseString takes two args: string s and integer method. To use the function, give it the string and specify the method you want to use (from 1 to 5).
+
+All reverse functions take a vector of chars and reverse the vector in-place (that is, the functions do not return anything but alter the input itself).
 
 ## Compile/Run Instructions
 ### Reverse a String Main Program
@@ -29,6 +20,8 @@ To Run:
 ```
 
 ### Unit Tests
+The unit tests are designed to test the reverse functions.
+
 To Compile:
 ```
 g++ -std=c++11 -o test test.cpp
@@ -39,4 +32,4 @@ To Run:
 ```
 
 ## Time/Space Complexity Analysis
-All functions take O(N/2) = O(N), i.e., linear time complexity. For space complexity, all functions take O(1) constant memory space, except for function 5 (using recursion), which generates call stack of O(N/2) space.
+All reverse functions take O(N/2) = O(N), i.e., linear time complexity. For space complexity, all reverse functions take O(1) constant memory space, except for function 5 (using recursion), which generates call stack of O(N/2) space.
