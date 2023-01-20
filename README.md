@@ -1,6 +1,8 @@
 # Reverse String
 This repository provides five different methods in C++ to reverse a string.
 
+The reverse functions _reverseStringX_ along with a wrapper function _reverseString_ are stored in class Solution in _reverse_string.cpp_
+
 When receiving a string, the wrapper function _reverseString_ firstly converts the string to a vector of char, then call the reverse functions to reverse the vector __in-place__. Finally, the function converts the reversed vector back to string and return.
 
 ## Usage of Functions
@@ -11,11 +13,11 @@ Example:
 #include "reverse_string.cpp"
 using namespace std;
 
-int main() {
+int main () {
     Solution solution;
     string s = "HelloWorld";
     string sRev = solution.reverseString(s, 1);
-    return 0
+    return 0;
 }
 ```
 
